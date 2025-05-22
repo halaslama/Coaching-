@@ -71,27 +71,39 @@
             text-transform: uppercase;
         }
 
-        .left-banner-content h1 {
-            font-weight: bolder;
-        }
+        @media (max-width: 768px) {
+    .left-banner-content {
+        padding: 20px;
+        text-align: center;
+    }
 
-        .left-banner-content {
-            padding: 50px;
-            margin-top: 20px;
-        }
+    .left-banner-content h1 {
+        font-size: 1.5rem;
+    }
 
-        .left-banner-content p {
-            padding-top: 30px;
+    .left-banner-content p {
+        font-size: 1rem;
+    }
 
-        }
+    .banner-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 
-        .first-banner-img {
+    .banner-btn a {
+        width: 80%;
+    }
+}
+.first-banner-img {
+    background-image: url('images1.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
 
-            background-size: cover;
-            height: 500px;
-            width: 100%;
-
-        }
 
         .carousel {
             background: #f8f9fa;
@@ -518,36 +530,26 @@ if (userLang.startsWith('fr')) {
         </div>
     </nav>
 
+<div class="first-banner-img d-none d-md-block"></div>
 
-    <div class="main-banner">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center">
-
-                    <img src="images1.png" alt="Banner Image" class="banner-image">
-                </div>
-
-                <div class="col-md-6">
-                    <div class="left-banner-content">
-                        <div class="left-banner-title">
-                            <h1>NUTRITION SPECIALIST DOUBLE CERTIFICATION : </h1>
-                            <span class="fitness-title">Ssa / Training</span>
-                        </div>
-                        <p>Apprenez à vous transformer grâce à un programme de Coaching fitness et diététique conçu sur
-                            mesure pour faire la différence, peu importe votre niveau de départ.</p>
-                        <div class="banner-btn">
-                            <a href="#" class="btn demarrer me-2">Démarrer maintenant</a>
-                            <a href="#" class="btn btn-outline-secondary socialicons"><i class='fab fa-instagram'
-                                    style='font-size:24px; color:white;'></i></a>
-                            <a href="#" class="btn btn-outline-secondary socialicons"><i class='fab fa-whatsapp'
-                                    style='font-size:24px; color:white;'></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<div class="row align-items-center">
+  <div class="col-md-6 col-12 text-center mb-4 mb-md-0">
+    <img src="images1.png" alt="Banner Image" class="banner-image img-fluid">
+  </div>
+  <div class="col-md-6 col-12 text-center text-md-start">
+    <div class="left-banner-content px-3 px-md-5">
+      <h1>NUTRITION SPECIALIST DOUBLE CERTIFICATION :</h1>
+      <span class="fitness-title">Ssa / Training</span>
+      <p>Apprenez à vous transformer...</p>
+      <div class="banner-btn d-flex flex-column flex-md-row align-items-center gap-3 mt-3">
+        <a href="#" class="btn demarrer">Démarrer maintenant</a>
+        <a href="#" class="btn btn-outline-secondary socialicons"><i class='fab fa-instagram'></i></a>
+        <a href="#" class="btn btn-outline-secondary socialicons"><i class='fab fa-whatsapp'></i></a>
+      </div>
     </div>
+  </div>
+</div>
+
 
 
     <div class="card-wrapper">
